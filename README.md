@@ -11,3 +11,6 @@ integrated with the input encoding and passed to the decoder for reconstruction.
 contains underlying normal patterns, normal samples reconstruct well and yield low reconstruction
 error while OOD inputs produce high reconstruction error due to distorted output resembling mem-
 orized normal data.
+
+![n](https://github.com/FaezehAtaei/MSc-Project/assets/27311166/23dc3f7f-a404-4d93-b464-248760edb5ed)
+
