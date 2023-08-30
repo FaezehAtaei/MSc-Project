@@ -18,3 +18,7 @@ orized normal data.
 # Getting started
 
 You can clone this project using this [link](https://github.com/FaezehAtaei/MSc-Project.git) and install requierments by ```pip install -r requirements.txt```. The ```requirements.txt``` would install everything you need. However, before using the ```requirements.txt```, it is suggested to create a virtual environment with python 3.8.16. This code was developed and tested on Ubuntu 20.04.6 using Python 3.8.16 and PyTorch 1.13.1.
+
+## Inputs
+
+In this project MNIST and CIFAR-10 datasets were used to train the model. It is organized to download and prepare the dataset for training in the first run. However, the default dataset is MNIST. To change the default dataset you need to make some changes in ```data_downloader``` funtion which is in ```utils.py``` file.
