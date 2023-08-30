@@ -35,4 +35,8 @@ Moreover, prior to commencing the training, remember to set the ```NORMAL_TARGET
 
 Following this, you should specify the desired dataset's name in the ```data_downloader``` function within the ```utils.py``` file. Once these steps are complete, you can execute the ```main.py``` file to initiate the training process with your chosen model and dataset.
 
+## Outputs
+
+During training, after each epoch, saved examples of reconstructed input, normal data tests, and anomaly data tests will be saved in the ```results``` folder. At the training's completion, the ```results``` folder will include scatter plots displaying training and validation losses, AUC values, and reconstruction errors.
+
 
