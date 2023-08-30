@@ -27,7 +27,7 @@ You can clone this project using this [link](https://github.com/FaezehAtaei/MSc-
 
 In this project MNIST and CIFAR-10 datasets were used to train the model. It is organized to download and prepare the dataset for training in the first run. However, the default dataset is MNIST. To change the default dataset, you just need to change the name of the dataset from ```MINST``` to ```CIFAR-10``` in the ```data_downloader``` funtion which is located in the ```utils.py``` file.
 
-## Training the model
+## Train the model
 
 To initiate the model training process, you have a range of options available in the ```models.py``` file. Once you've decided on a particular model architecture, proceed to the ```main.py``` file. In the ```main.py``` file, you'll find a variable named ```model```. This variable needs to be assigned the selected model from the ```models.py``` file. For instance, if you've chosen the ```Mem_VAE_MNIST``` model, which is memory augmented VAE for MNIST dataset, your assignment would be: ```model = Mem_VAE_MNIST()```.
 
