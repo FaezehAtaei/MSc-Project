@@ -39,4 +39,10 @@ Following this, you should specify the desired dataset's name in the ```data_dow
 
 During training, after each epoch, saved examples of reconstructed input, normal data tests, and anomaly data tests will be saved in the ```results``` folder. At the training's completion, the ```results``` folder will include scatter plots displaying training and validation losses, AUC values, and reconstruction errors.
 
+# Acknowledgments
+This code is implemented by getting help from the following sources:
+- [Original implementation of active object localization algorithm](https://github.com/jccaicedo/localization-agent)
+- [Tutorial for deep reinforcement learning](https://github.com/dennybritz/reinforcement-learning)
+- [Tutorial for deep learning from the university of Edinburgh](https://github.com/otoofim/mlpractical)
+
 
