@@ -41,7 +41,7 @@ During training, after each epoch, saved examples of reconstructed input, normal
 
 # Acknowledgments
 This code is implemented by getting help from the following sources:
-- [Original implementation of active object localization algorithm](https://github.com/jccaicedo/localization-agent)
+- [Original implementation of Memory-augmented Deep Autoencoder for Unsupervised Anomaly Detection]([https://github.com/jccaicedo/localization-agent](https://github.com/donggong1/memae-anomaly-detection))
 - [Tutorial for deep reinforcement learning](https://github.com/dennybritz/reinforcement-learning)
 - [Tutorial for deep learning from the university of Edinburgh](https://github.com/otoofim/mlpractical)
 
