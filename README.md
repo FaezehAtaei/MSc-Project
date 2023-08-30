@@ -12,7 +12,11 @@ contains underlying normal patterns, normal samples reconstruct well and yield l
 error while OOD inputs produce high reconstruction error due to distorted output resembling mem-
 orized normal data.
 
-![n](https://github.com/FaezehAtaei/MSc-Project/assets/27311166/23dc3f7f-a404-4d93-b464-248760edb5ed)
+<div class="row" align="center">
+  <div class="column" align="center">
+    <img src="https://github.com/FaezehAtaei/MSc-Project/assets/27311166/23dc3f7f-a404-4d93-b464-248760edb5ed"/>
+  </div>
+</div>
 
 
 # Getting started
@@ -22,3 +26,5 @@ You can clone this project using this [link](https://github.com/FaezehAtaei/MSc-
 ## Inputs
 
 In this project MNIST and CIFAR-10 datasets were used to train the model. It is organized to download and prepare the dataset for training in the first run. However, the default dataset is MNIST. To change the default dataset, you just need to change the name of the dataset from ```MINST``` to ```CIFAR-10``` in the ```data_downloader``` funtion which is located in the ```utils.py``` file.
+
+## 
