@@ -15,4 +15,5 @@ orized normal data.
 ![n](https://github.com/FaezehAtaei/MSc-Project/assets/27311166/23dc3f7f-a404-4d93-b464-248760edb5ed)
 
 # Getting started
+
 You can clone this project using this [link](https://github.com/FaezehAtaei/MSc-Project.git) and install requierments by pip install -r requirements.txt. The requirements.txt would install everything you need. However, before using the requirements.txt, it is suggested to create a virtual environment with python 3.8.16. This code was developed and tested on Ubuntu 16.04 using Python 3.8.16 and PyTorch 1.13.1.
