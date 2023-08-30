@@ -21,4 +21,4 @@ You can clone this project using this [link](https://github.com/FaezehAtaei/MSc-
 
 ## Inputs
 
-In this project MNIST and CIFAR-10 datasets were used to train the model. It is organized to download and prepare the dataset for training in the first run. However, the default dataset is MNIST. To change the default dataset you need to make some changes in ```data_downloader``` funtion which is in ```utils.py``` file.
+In this project MNIST and CIFAR-10 datasets were used to train the model. It is organized to download and prepare the dataset for training in the first run. However, the default dataset is MNIST. To change the default dataset you just need to change name of the dataset from ```MINST``` to ```CIFAR-10``` in ```data_downloader``` funtion which is located in ```utils.py``` file.
