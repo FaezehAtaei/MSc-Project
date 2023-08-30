@@ -19,7 +19,7 @@ from utils import plot_roc, plot_elbo, data_downloader
 os.makedirs("./results", exist_ok=True)
 
 # Define constants and hyperparameters
-ANOMALY_TARGET = 0    # Anomaly number
+NORMAL_TARGET = 0    # Anomaly number
 entropy_loss_weight = 0.0002
 batch_size = 32
 log_interval = 10
@@ -43,7 +43,7 @@ if __name__ == "__main__":
     train_loss_list = []
     anomaly_elbo_list = []
     
-    train_loader, anomaly_loader, test_loader, test_dataset, anomaly_dataset, all_test_loader, all_anomaly_loader = data_downloader(ANOMALY_TARGET, batch_size)
+    train_loader, anomaly_loader, test_loader, test_dataset, anomaly_dataset, all_test_loader, all_anomaly_loader = data_downloader(NORMAL_TARGET, batch_size)
     
 #     model.load_state_dict(torch.load('./checkpoints/model_name'))
 
@@ -53,7 +53,7 @@ if __name__ == "__main__":
         avg_train_elbo   = train(model, epoch, train_loader, optimizer, entropy_loss_weight, batch_size)
         avg_anomaly_elbo = anomaly(model, epoch, anomaly_loader, entropy_loss_weight, batch_size)
         avg_test_elbo    = test(model, epoch, test_loader, entropy_loss_weight, batch_size)
-        auc, cutoff      = plot_roc(model, test_dataset, anomaly_dataset, all_test_loader, all_anomaly_loader, entropy_loss_weight, ANOMALY_TARGET, plot=False)
+        auc, cutoff      = plot_roc(model, test_dataset, anomaly_dataset, all_test_loader, all_anomaly_loader, entropy_loss_weight, NORMAL_TARGET, plot=False)
         
         print("AUC:", auc)
         auc_list.append(auc)
@@ -67,7 +67,7 @@ if __name__ == "__main__":
 #     torch.save(model.state_dict(), './checkpoints/model_name')
 
     # Plot ROC curve, AUC, and other evaluation metrics
-    auc, cutoff = plot_roc(model, test_dataset, anomaly_dataset, all_test_loader, all_anomaly_loader, entropy_loss_weight, ANOMALY_TARGET, plot=True)
+    auc, cutoff = plot_roc(model, test_dataset, anomaly_dataset, all_test_loader, all_anomaly_loader, entropy_loss_weight, NORMAL_TARGET, plot=True)
 
     plot_elbo(epochs, train_elbo_list, anomaly_elbo_list, train_loss_list, test_loss_list, auc_list)
     
